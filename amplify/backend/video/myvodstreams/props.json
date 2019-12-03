@@ -1,0 +1,26 @@
+{
+    "shared": {
+        "resourceName": "myvodstreams",
+        "bucketInput": "myvodstreams-reinv-input-5jrfsvue",
+        "bucketOutput": "myvodstreams-reinv-output-5jrfsvue",
+        "bucket": "amplify-unicornflix-reinv-140254-deployment"
+    },
+    "template": {
+        "name": "Amplify_Video_Ott_Hls_Ts_Avc_Aac.json",
+        "arn": "arn:aws:mediaconvert:us-east-2:585391604912:jobTemplates/Amplify_Video_Ott_Hls_Ts_Avc_Aac"
+    },
+    "contentDeliveryNetwork": {
+        "enableDistribution": false
+    },
+    "cms": {
+        "editAPI": true
+    },
+    "parameters": {
+        "authRoleName": {
+            "Ref": "AuthRoleName"
+        },
+        "unauthRoleName": {
+            "Ref": "UnauthRoleName"
+        }
+    }
+}
